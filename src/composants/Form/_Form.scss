@@ -1,0 +1,89 @@
+// Couleur vive pour le troisième input
+.form {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to bottom right, #3498db, #8e44ad);
+  height: 100vh;
+}
+form {
+  background-color: #000000; // Fond sombre
+  padding: 4rem; // Espacement intérieur
+  border-radius: 10px; // Bordure arrondie
+  width: 50vw;
+  height: 80%;
+  margin: 2rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+  input[type="email"],
+  input[type="tel"],
+  input[type="text"],
+  input[type="name"],
+  textarea,
+  select {
+    background-color: #222; // Fond noir intense
+    color: #fff; // Texte blanc
+    border: none; // Pas de bordure
+    padding: 10px; // Espacement intérieur
+    margin-bottom: 10px; // Marge en bas
+    border-radius: 5px; // Bordure arrondie
+    border: #000000 4px solid;
+
+    &::placeholder {
+      color: #888; // Couleur de l'indicateur de champ
+    }
+
+    &:focus {
+      outline: none; // Pas de contour de focus
+
+      // Couleur de la bordure au focus
+
+      &:nth-child(2) {
+        border-color: #f9479d; // Couleur vive pour le premier input
+      }
+
+      &:nth-child(3) {
+        border-color: #f2e8df; // Couleur vive pour le deuxième input
+      }
+
+      &:nth-child(4) {
+        border-color: #ffbe19; // Couleur vive pour le troisième input
+      }
+      &:nth-child(5) {
+        border-color: #f00245; // Couleur vive pour le troisième input
+      }
+      &:nth-child(6) {
+        border-color: #ffbe19; // Couleur vive pour le troisième input
+      }
+      &:nth-child(7) {
+        border-color: #ffbe19; // Couleur vive pour le troisième input
+      }
+    }
+  }
+  textarea {
+    min-height: 5rem;
+    max-height: 15rem; // Hauteur minimale
+  }
+  select {
+    background-color: #222; // Fond noir intense pour le select
+    color: #fff; // Texte blanc
+    border-radius: 5px; // Bordure arrondie
+  }
+
+  input[type="submit"] {
+    background-color: #333; // Fond sombre pour le bouton
+    color: #fff; // Texte blanc
+    border: none; // Pas de bordure
+    padding: 10px 20px; // Espacement intérieur
+    border-radius: 5px; // Bordure arrondie
+
+    &:hover {
+      background-color: #555; // Fond sombre au survol
+    }
+  }
+}

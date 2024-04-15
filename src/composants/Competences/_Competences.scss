@@ -1,0 +1,120 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+.competences {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  //   background: linear-gradient(to bottom, #151515 95%, #ffffff 100%);
+  background-color: #151515;
+  width: 100%;
+  padding-bottom: 4rem;
+  .tab-competences {
+    width: 80%;
+  }
+  h2 {
+    color: white;
+    font-size: 2.4rem;
+    margin-top: 8rem;
+    padding-bottom: 2rem;
+    transition: text-shadow 1s ease;
+    &:hover {
+      text-shadow: 0 0 5px #c549f7, 0 0 10px #c549f7, 0 0 20px #c549f7,
+        0 0 40px #c549f7; /* État de survol : effet de néon allumé */
+    }
+  }
+
+  .competences-item {
+    display: flex;
+    border-radius: 0.5rem;
+    background-color: transparent;
+    margin: 2rem;
+    height: 2rem;
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      display: flex;
+      color: white;
+      text-shadow: 0 0 5px #ffffff, 0 0 20px #000, 0 0 30px #000;
+      gap: 1rem;
+      align-items: center;
+      border-radius: 0.5rem;
+      height: 101%;
+      padding-left: 1rem;
+      margin-right: 0.5rem;
+    }
+  }
+  .competences-item-last {
+    margin-bottom: 100px;
+  }
+  .html p {
+    background-color: #e34f26;
+    width: 97%;
+  }
+  .css p {
+    background-color: #1572b6;
+    width: 95%;
+  }
+  .scss p {
+    background-color: #c6538c;
+    width: 89%;
+  }
+  .javascript p {
+    background-color: #f7df1e;
+    width: 86%;
+  }
+  .react p {
+    background-color: #61dafb;
+    width: 84%;
+  }
+  .redux p {
+    background-color: #764abc;
+    width: 75%;
+  }
+  .seo p {
+    background-color: #50c878;
+    width: 79%;
+  }
+  .green p {
+    background-color: #228b22;
+    width: 82%;
+  }
+  .responsive p {
+    background-color: #40e0d0;
+    width: 93%;
+  }
+}
+
+@media (max-width: 768px) {
+  .competences {
+    .tab-competences {
+      width: 80%;
+
+      .competences-item {
+        height: 2.5rem;
+        margin: 2.3rem;
+      }
+    }
+  }
+}
+@media (max-width: 568px) {
+  .competences {
+    h2 {
+      margin-top: 5rem;
+    }
+
+    .tab-competences {
+      width: 100%;
+      gap: 3rem;
+      .competences-item {
+        height: 2.5rem;
+      }
+    }
+  }
+}
